@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class exercicio24 {
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        int n;
+        int cont = 1;
+        float nota;
+        float soma = 0;
+        float media;
+
+        System.out.println("Digite a quantidade de notas");
+        n = ler.nextInt();
+
+        while (cont <= n) {
+            System.out.println("Digite a " + cont + " nota");
+            nota = ler.nextFloat();
+            soma = soma + nota;
+            cont = cont + 1;
+        }
+
+        media = soma / n;
+        System.out.println("Media" + " " + media);
+
+        ler.close();
+    }
+}
